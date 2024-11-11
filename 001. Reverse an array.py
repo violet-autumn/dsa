@@ -1,3 +1,5 @@
+# Reverse a given array of integers (a) 
+
 def reverseArray(a):
     size = len(a)
     # print(size)
