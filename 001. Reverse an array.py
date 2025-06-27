@@ -7,6 +7,7 @@ def reverseArray(a):
         b.append(a[size-i-1])
     return b
 
+#----------------------------------------------#
 
 def reverseArray(a):
     size = len(a)
