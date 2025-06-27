@@ -20,24 +20,23 @@ def matchingStrings(stringList, queries):
 # Following is an O(n) approach using hashmap
 
 def matchingStrings(stringList, queries):
-    
     # create a dict of all elements in stringList with their frequency
     size = len(stringList)
     dict = {}
     for i in range (0,size):
-        if dict.get(stringList[i]) is None:
-             dict[stringList[i]] = 1
-        else:
+        if stringList[i] in dict: 
             dict[stringList[i]] = dict[stringList[i]] + 1
+        else:
+            dict[stringList[i]] = 1
     
     # query the dictionary and store the results
     size = len(queries)
     answer = [0] * size
     
     for i in range (0, size):
-        if dict.get(queries[i]) is None:
-            answer[i] = 0
-        else:
+        if queries[i] in dict:
             answer[i] = dict[queries[i]]
+        else:
+            answer[i] = 0
     
     return answer
