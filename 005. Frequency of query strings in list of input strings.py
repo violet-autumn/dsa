@@ -1,5 +1,7 @@
 # Count the frequency of query strings in list of input strings: https://www.hackerrank.com/challenges/sparse-arrays/problem
 
+# Following is an O(n square) appraoch using nested loops
+
 def matchingStrings(stringList, queries):
     size_of_list = len(stringList)
     number_of_queries = len(queries)
@@ -12,3 +14,30 @@ def matchingStrings(stringList, queries):
                 query_occurance=query_occurance+1
         result.append(query_occurance)
     return result
+
+#--------------------------------------------------------------#
+
+# Following is an O(n) approach using hashmap
+
+def matchingStrings(stringList, queries):
+    
+    # create a dict of all elements in stringList with their frequency
+    size = len(stringList)
+    dict = {}
+    for i in range (0,size):
+        if dict.get(stringList[i]) is None:
+             dict[stringList[i]] = 1
+        else:
+            dict[stringList[i]] = dict[stringList[i]] + 1
+    
+    # query the dictionary for and store the results
+    size = len(queries)
+    answer = [0] * size
+    
+    for i in range (0, size):
+        if dict.get(queries[i]) is None:
+            answer[i] = 0
+        else:
+            answer[i] = dict[queries[i]]
+    
+    return answer
