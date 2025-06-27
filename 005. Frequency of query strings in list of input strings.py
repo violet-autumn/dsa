@@ -30,7 +30,7 @@ def matchingStrings(stringList, queries):
         else:
             dict[stringList[i]] = dict[stringList[i]] + 1
     
-    # query the dictionary for and store the results
+    # query the dictionary and store the results
     size = len(queries)
     answer = [0] * size
     
