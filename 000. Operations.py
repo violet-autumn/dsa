@@ -26,4 +26,13 @@ arr = [[] for _ in range(rows)]
 row_size = len(arr)																		
 col_size = len(arr[0])
 
+#----------------------------------------------------------------------------------------------------------------------#
+
+# Linked list
+
+# Given pointer to head, print the "data" at all the nodes of the linked list (pointer to nxt node is in variable named "next")
+current_node = head
+while current_node is not None:
+    print(current_node.data)
+    current_node = current_node.next
 
