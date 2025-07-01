@@ -30,9 +30,20 @@ col_size = len(arr[0])
 
 # Linked list
 
-# Given pointer to head, print the "data" at all the nodes of the linked list (pointer to nxt node is in variable named "next")
+# Given pointer to head, print the "data" at all the nodes of the linked list (pointer to next node is in variable named "next")
 current_node = head
 while current_node is not None:
     print(current_node.data)
     current_node = current_node.next
+
+# Given the head, return the tail of the linked list
+current_node = head
+if current_node is None:
+    return current_node
+else:
+    while current_node.next is not None:
+        current_node = current_node.next
+    return current_node
+
+
 
