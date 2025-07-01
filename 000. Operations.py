@@ -45,5 +45,9 @@ else:
         current_node = current_node.next
     return current_node
 
-
+# Given the head and data for a node, create a new node and make it the head of the list
+new_node = NodeClass(data)
+new_node.next = head
+head = new_node
+return head
 
