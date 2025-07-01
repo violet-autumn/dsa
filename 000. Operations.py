@@ -36,7 +36,7 @@ while current_node is not None:
     print(current_node.data)
     current_node = current_node.next
 
-# Given the head, return the tail of the linked list
+# Given pointer to head, return pointer to the tail of the linked list
 current_node = head
 if current_node is None:
     return current_node
@@ -45,7 +45,7 @@ else:
         current_node = current_node.next
     return current_node
 
-# Given the head and data for a node, create a new node and make it the head of the list
+# Given pointer to head and data for a node, create a new node and make it the new head of the list
 new_node = NodeClass(data)
 new_node.next = head
 head = new_node
