@@ -3,16 +3,23 @@
 # Declare an empty array
 a = []                   
 
-# Append element in the array
+# Append element at the end of the array
 a.append(<elemet>) 		
 
-# len(a) returns the length of the array 
-size = len(a)				
+# Remove element from the end of the array
+last_element = a.pop()
+
+# Find the length of the array 
+size = len(a)			
+
+# Check if an array is empty
+if a == []:
+    print("The array is empty")
 
 # Create an array b of the length "size" and initialize all elements 0
 b = [0] * size				
 
-# Print the array and then print the element at the 5th index
+# Print the array and then print the element at the ith index
 print(a)									 
 print(a[i])
 
