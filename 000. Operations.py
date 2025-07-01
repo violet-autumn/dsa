@@ -9,6 +9,9 @@ a.append(<elemet>)
 # Remove element from the end of the array
 last_element = a.pop()
 
+# Remove element from ith index of the array
+ith_element = a.pop(i)
+
 # Find the length of the array 
 size = len(a)			
 
