@@ -8,7 +8,6 @@ def getNode(head, positionFromTail):
         current_node = current_node.next
     
     size = len(a)
-    print(size-positionFromTail)
-    answer = a.pop(size-positionFromTail-1)
+    answer = a[size-positionFromTail-1]
     
     return answer
