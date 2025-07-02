@@ -5,7 +5,7 @@ def findMergeNode(head1, head2):
     c1 = head1
     c2 = head2
     
-    # Store the addresses of all nodes for list1
+    # Store the addresses of all nodes of list1
     while c1 is not None:
         a.append(c1)
         c1 = c1.next
