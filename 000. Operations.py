@@ -3,6 +3,9 @@
 # Declare an empty array
 a = []                   
 
+# Create an array of the length "size" and initialize all elements 0. Eg: [0, 0, 0]
+b = [0] * size		
+
 # Append element at the end of the array
 a.append(<elemet>) 		
 
@@ -19,9 +22,10 @@ size = len(a)
 if a == []:
     print("The array is empty")
 
-# Create an array b of the length "size" and initialize all elements 0
-b = [0] * size				
-
+# Check if an element is in the array
+if element in a:
+    print("Element Found")
+		
 # Print the array and then print the element at the ith index
 print(a)									 
 print(a[i])
