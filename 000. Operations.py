@@ -51,10 +51,10 @@ while current_node is not None:
     current_node = current_node.next
 
 # Given pointer to head, return pointer to the tail of the linked list
-current_node = head
-if current_node is None:
-    return current_node
+if head is None or head.next is None:
+    return head
 else:
+	current_node = head
     while current_node.next is not None:
         current_node = current_node.next
     return current_node
