@@ -59,9 +59,10 @@ else:
         current_node = current_node.next
     return current_node
 
-# Given pointer to head and data for a node, create a new node and make it the new head of the list
+# Given pointer to head and data for a node, create a new node and make it the new head of the doubly linked list (pointers are prev and next)
 new_node = NodeClass(data)
 new_node.next = head
+head.prev = new_node
 head = new_node
 return head
 
