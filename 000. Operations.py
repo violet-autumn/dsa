@@ -83,3 +83,10 @@ def inOrder(root):
         print(root.info, end=" ")
         inOrder(root.right)
 
+# Height of a bianry tree
+def height(root):
+    if root is None:
+        return -1
+    else:
+        return 1 + max(height(root.left), height(root.right))
+
