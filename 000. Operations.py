@@ -66,3 +66,16 @@ head.prev = new_node
 head = new_node
 return head
 
+#----------------------------------------------------------------------------------------------------------------------#
+
+# Tree
+
+# Pre-order traversal (node, left, right)
+def preOrder(root):
+    if root is None:
+        return;
+    else:
+        print(root.info, end=" ")
+        preOrder(root.left)
+        preOrder(root.right)
+
