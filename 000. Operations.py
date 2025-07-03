@@ -71,11 +71,15 @@ return head
 # Tree
 
 # Pre-order traversal (node, left, right)
-def preOrder(root):
+# In-order traversal (left, node, right)
+# Post-order trafversal (left, right, node)
+
+# In-order traversal
+def inOrder(root):
     if root is None:
         return;
     else:
+        inOrder(root.left)
         print(root.info, end=" ")
-        preOrder(root.left)
-        preOrder(root.right)
+        inOrder(root.right)
 
