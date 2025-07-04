@@ -36,9 +36,14 @@ arr = [[0 for _ in range(cols)] for _ in range(rows)]
 # Create an empty nested 2D array. Eg: [[], [], []]
 arr = [[] for _ in range(rows)]			
 
-# Calculate row and col lengths for 2D array
+# Calculate row and col lengths for uniform 2D array
 row_size = len(arr)																		
 col_size = len(arr[0])
+
+# Print values of a non-uniform 2D array in one line [[1], [2, 3], [4], [5], [6, 7, 8]]
+for i in range (0, len(arr)):
+	for j in range(0, len(arr[i])):
+		print(arr[i][j], end=" ")
 
 #----------------------------------------------------------------------------------------------------------------------#
 
