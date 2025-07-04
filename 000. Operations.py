@@ -115,3 +115,6 @@ def height(root):
     else:
         return 1 + max(height(root.left), height(root.right))
 
+# Recursion vs Iteration 
+# Use recursion when you have to go to every node (like pre, post, in, level order traversals, top view, height of the tree)
+# Use iteration when you have to follow only one path (like binary search tree)
