@@ -42,6 +42,26 @@ col_size = len(arr[0])
 
 #----------------------------------------------------------------------------------------------------------------------#
 
+# Dictionary
+
+# Declare an empty dict
+a = {}
+
+# Assign/update the value for a given key
+a[key] = value
+
+# Print a dict
+print(a)
+
+# Find the min and max keys in a dict
+min_key = min(a)
+max_key = max(a)
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------#
+
 # Linked list
 
 # Given pointer to head, print the "data" at all the nodes of the linked list (pointer to next node is in variable named "next")
