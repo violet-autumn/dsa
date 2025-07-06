@@ -26,7 +26,9 @@ def decodeHuff(root, s):
 
 #------------------------------------------------------------------------------------------------------------#
 
-# The following approach traverses the entire tree once and builds a decoder dict, thereby saving the comute to go through the tree for every letter
+# The following approach traverses the entire tree once and builds a decoder dict, thereby saving the comute to go through the tree for every letter.
+# This approach works because if say the path for B is 110, then there can be no leaf node at the substring path corresponsing to 1 or 11. 
+# Those nodes will not be leaf nodes by the design of the Huffman tree.
 
 def assign(root, decoder, string):
     # If the node is a leaf node, assign the character in decoder dict
