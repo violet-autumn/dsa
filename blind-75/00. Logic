@@ -1,0 +1,12 @@
+
+01. Longest Consecutive Sequence in O(n) - 
+  * Put elements in a set (lookup is O(1))
+  * Iterate through the set and check if a given element is a starting element (is element - 1 in set?). Ignore if it's not a starting element
+  * For starting elements, keep ckecking if element++ is in set. That is the streak of that starting element.
+  * Longest streak is the answer (use a global counter)
+
+02. Two Sum
+  * Put elements in a set (lookup is O(1))
+  * For an element a, check if (target - a) is present in the set - edge case: if a == (target-a), then freq(a)>=2
+  * As soon as you find the pair, send the original list, a, and target-a to a function that returns the indices of the elements from the list - edge case: handle the case where a == (target-a) and freq(a) >= 2, ensuring that two different indexes are chosen
+
