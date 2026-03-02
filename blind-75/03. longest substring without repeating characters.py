@@ -5,9 +5,10 @@ class Solution:
         for i in s:
             if i in sub:
                 parts = sub.split(i, 1)
-                sub = parts[1] if len(parts) > 1 else sub
+                sub = parts[1]
             sub = sub + i
             if len(sub) > length:
                 length = len(sub)
 
         return length
+        
