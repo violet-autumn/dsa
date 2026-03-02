@@ -10,3 +10,15 @@
   * For an element a, check if (target - a) is present in the set - edge case: if a == (target-a), then freq(a)>=2
   * As soon as you find the pair, send the original list, a, and target-a to a function that returns the indices of the elements from the list - edge case: handle the case where a == (target-a) and freq(a) >= 2, ensuring that two different indexes are chosen
 
+03. Longest substring without repeating characters
+	* Create a substring sub = ""
+	* Iterate through the original string letter by letter. 
+	* If a letter i is present in sub, then split sub over i (parts = sub.split(i, 1), sub = parts[1]). This way we discard prefix part until i
+	* Add the character i to sub as a suffix (sub = sub + i)
+	* Maintain a global length counter and update whenever len(sub) > length
+
+04. Longest Palindrome Substring 
+	* Create a helper function expand that takes 'left' and 'right' integers and expands on both sides till the palindrome conditions are met and returns the substring s[left+1:right]
+	* Iterate the original string. For every index i, call the expand function for the odd and even conditions, aka p1 = expand(i, i) and p2 = expand (i, i+1)
+	* Keep track of the longest substring annd that is the answser
+ 
