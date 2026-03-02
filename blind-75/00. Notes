@@ -1,0 +1,25 @@
+
+List
+* Ordered collection of items that is mutable (changeable). 
+* Allow duplicate members and can store mixed data types.
+* list = ['apple', 'banana']
+* Lookup time = O(n)
+
+Tuple
+* ordered collection of items that is immutable (unchangeable after creation). 
+* Allow duplicate members.
+* tuple = ('apple', 'banana')
+* Lookup time = O(n)
+
+Set
+* Unordered collection of unique elements. 
+* They are mutable, but do not support indexing.
+* set = {1, 2, 3}
+* Lookup time is O(1)
+
+Distionary
+* An unordered collection that stores data as key-value pairs. 
+* Keys must be unique and immutable. Dictionaries are mutable.
+* dict = {'name': 'Alice', 'age': '30'}
+* Lookup time for a key is O(1)
+
